@@ -1,0 +1,35 @@
+Windows Registry Editor Version 5.00
+; Add "open with cmder" to right click menus 
+
+; =========
+; = Files =
+; =========
+
+; Name
+[HKEY_CURRENT_USER\Software\Classes\directory\Background\shell\Cmder]
+@="Open with Cmder"
+
+; Action
+[HKEY_CURRENT_USER\Software\Classes\directory\Background\shell\Cmder\command]
+@="\"C:\\cmder\\Cmder.exe\" \"%1\""
+
+; Icon
+[HKEY_CURRENT_USER\Software\Classes\directory\Background\shell\Cmder]
+"icon"="C:\\cmder\\icons\\cmder.ico"
+
+
+; ===============
+; = Directories =
+; ===============
+
+; Name
+[HKEY_CURRENT_USER\Software\Classes\directory\shell\Cmder]
+@="Open with Cmder"
+
+; Action
+[HKEY_CURRENT_USER\Software\Classes\directory\shell\Cmder\command]
+@="\"C:\\cmder\\Cmder.exe\" \"%1\""
+
+; Icon   
+[HKEY_CURRENT_USER\Software\Classes\directory\shell\Cmder]
+"icon"="C:\\cmder\\icons\\cmder.ico"
