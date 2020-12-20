@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Windows will prompt you to "finish setting up your device" over and over and over. This stops that
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
